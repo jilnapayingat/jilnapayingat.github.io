@@ -2,89 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CAS Application Form</title>
+    <title>Jilna P | Personal Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>CAS Application Form</h1>
+<header>
+    <h1>Jilna P</h1>
+    <p>Lecturer | Electronics & Communication Engineering</p>
+</header>
 
-<div class="nav-buttons">
-    <button onclick="showPage('page1')">Page 1: Personal Details</button>
-    <button onclick="showPage('page2')">Page 2: Qualification & Experience</button>
-</div>
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-<!-- PAGE 1 -->
-<div id="page1" class="page active">
-    <h2>Personal & Service Details</h2>
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a Lecturer in Electronics & Communication Engineering with more than eight years
+        of teaching experience in government and reputed technical institutions.
+        I am passionate about teaching, mentoring students, and continuously improving
+        teaching–learning practices in line with AICTE guidelines.
+    </p>
+</section>
 
-    <table>
-        <tr><th>Name</th><td>JILNA P</td></tr>
-        <tr><th>PEN</th><td>778861</td></tr>
-        <tr><th>Designation</th><td>Lecturer in Electronics (AGP 6000)</td></tr>
-        <tr><th>Department</th><td>Electronics & Communication</td></tr>
-        <tr><th>Institution</th><td>AKNM Govt. Polytechnic College, Tirurangadi</td></tr>
-        <tr><th>Date of Joining Service</th><td>25/07/2016</td></tr>
-        <tr><th>Date of Probation Declaration</th><td>07/11/2018</td></tr>
-        <tr><th>Eligible Date of Placement</th><td>25/07/2019</td></tr>
-        <tr><th>Disciplinary Action</th><td>None</td></tr>
-    </table>
-</div>
+<section id="experience">
+    <h2>Experience</h2>
 
-<!-- PAGE 2 -->
-<div id="page2" class="page">
-    <h2>Qualification Details</h2>
+    <div class="card">
+        <h3>AKNM Govt. Polytechnic College, Tirurangadi</h3>
+        <p><strong>Role:</strong> Lecturer (July 2016 – Present)</p>
+        <p>Teaching diploma-level ECE subjects, academic planning, evaluation, and student mentoring.</p>
+    </div>
 
-    <table>
-        <tr>
-            <th>Degree</th>
-            <th>Institution</th>
-            <th>University</th>
-            <th>Date</th>
-        </tr>
-        <tr>
-            <td>B.Tech</td>
-            <td>Govt. College of Engineering, Kannur</td>
-            <td>Kannur University</td>
-            <td>04/01/2005</td>
-        </tr>
-        <tr>
-            <td>M.Tech</td>
-            <td>NIELIT</td>
-            <td>University of Calicut</td>
-            <td>19/10/2011</td>
-        </tr>
-        <tr>
-            <td>PhD</td>
-            <td>NIT Calicut</td>
-            <td>NIT Calicut</td>
-            <td>03/05/2018</td>
-        </tr>
-    </table>
+    <div class="card">
+        <h3>National Institute of Technology, Calicut</h3>
+        <p><strong>Role:</strong> Lecturer (June 2016 – May 2017)</p>
+        <p>Undergraduate teaching aligned with AICTE standards.</p>
+    </div>
 
-    <h2>Previous Experience</h2>
+    <div class="card">
+        <h3>MES College of Engineering, Kuttippuram</h3>
+        <p><strong>Role:</strong> Lecturer (July 2007 – July 2009)</p>
+        <p>Undergraduate teaching and laboratory supervision.</p>
+    </div>
+</section>
 
-    <table>
-        <tr>
-            <th>Organization</th>
-            <th>Designation</th>
-            <th>Period</th>
-            <th>Nature of Work</th>
-        </tr>
-        <tr>
-            <td>MES College of Engineering, Kuttippuram</td>
-            <td>Lecturer</td>
-            <td>03/07/2007 – 31/07/2009</td>
-            <td>Teaching</td>
-        </tr>
-        <tr>
-            <td>NIT Calicut</td>
-            <td>Lecturer</td>
-            <td>01/06/2016 – 31/05/2017</td>
-            <td>Teaching</td>
-        </tr>
-    </table>
-</div>
+<section id="education">
+    <h2>Education</h2>
+    <ul>
+        <li><strong>Ph.D</strong> – NIT Calicut (2018)</li>
+        <li><strong>M.Tech</strong> – University of Calicut (2011)</li>
+        <li><strong>B.Tech</strong> – Kannur University (2005)</li>
+    </ul>
+</section>
+
+<section id="skills">
+    <h2>Skills & Interests</h2>
+    <ul class="skills">
+        <li>Teaching & Mentoring</li>
+        <li>Curriculum Development</li>
+        <li>Academic Evaluation</li>
+        <li>Faculty Development</li>
+        <li>Research & Publications</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p><strong>Institution:</strong> AKNM Govt. Polytechnic College, Tirurangadi</p>
+    <p><strong>Email:</strong> gptctgdi@gmail.com</p>
+    <p><strong>Phone:</strong> 0494 2401136</p>
+</section>
+
+<footer>
+    <p>© 2025 Jilna P</p>
+</footer>
 
 <script src="script.js"></script>
 </body>
