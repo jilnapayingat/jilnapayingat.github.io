@@ -1,16 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My First Website</title>
+    <meta charset="UTF-8">
+    <title>CAS Application Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Welcome to My Website</h1>
-    <p>This is my first website made with HTML, CSS & JavaScript!</p>
+<h1>CAS Application Form</h1>
 
-    <button onclick="showMessage()">Click Me</button>
+<div class="nav-buttons">
+    <button onclick="showPage('page1')">Page 1: Personal Details</button>
+    <button onclick="showPage('page2')">Page 2: Qualification & Experience</button>
+</div>
 
-    <script src="script.js"></script>
+<!-- PAGE 1 -->
+<div id="page1" class="page active">
+    <h2>Personal & Service Details</h2>
+
+    <table>
+        <tr><th>Name</th><td>JILNA P</td></tr>
+        <tr><th>PEN</th><td>778861</td></tr>
+        <tr><th>Designation</th><td>Lecturer in Electronics (AGP 6000)</td></tr>
+        <tr><th>Department</th><td>Electronics & Communication</td></tr>
+        <tr><th>Institution</th><td>AKNM Govt. Polytechnic College, Tirurangadi</td></tr>
+        <tr><th>Date of Joining Service</th><td>25/07/2016</td></tr>
+        <tr><th>Date of Probation Declaration</th><td>07/11/2018</td></tr>
+        <tr><th>Eligible Date of Placement</th><td>25/07/2019</td></tr>
+        <tr><th>Disciplinary Action</th><td>None</td></tr>
+    </table>
+</div>
+
+<!-- PAGE 2 -->
+<div id="page2" class="page">
+    <h2>Qualification Details</h2>
+
+    <table>
+        <tr>
+            <th>Degree</th>
+            <th>Institution</th>
+            <th>University</th>
+            <th>Date</th>
+        </tr>
+        <tr>
+            <td>B.Tech</td>
+            <td>Govt. College of Engineering, Kannur</td>
+            <td>Kannur University</td>
+            <td>04/01/2005</td>
+        </tr>
+        <tr>
+            <td>M.Tech</td>
+            <td>NIELIT</td>
+            <td>University of Calicut</td>
+            <td>19/10/2011</td>
+        </tr>
+        <tr>
+            <td>PhD</td>
+            <td>NIT Calicut</td>
+            <td>NIT Calicut</td>
+            <td>03/05/2018</td>
+        </tr>
+    </table>
+
+    <h2>Previous Experience</h2>
+
+    <table>
+        <tr>
+            <th>Organization</th>
+            <th>Designation</th>
+            <th>Period</th>
+            <th>Nature of Work</th>
+        </tr>
+        <tr>
+            <td>MES College of Engineering, Kuttippuram</td>
+            <td>Lecturer</td>
+            <td>03/07/2007 – 31/07/2009</td>
+            <td>Teaching</td>
+        </tr>
+        <tr>
+            <td>NIT Calicut</td>
+            <td>Lecturer</td>
+            <td>01/06/2016 – 31/05/2017</td>
+            <td>Teaching</td>
+        </tr>
+    </table>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
