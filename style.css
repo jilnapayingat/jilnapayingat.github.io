@@ -1,25 +1,32 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #f7f9fb;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f2f6fc;
     color: #333;
 }
 
+/* Header */
 header {
-    background-color: #2c3e50;
+    background: linear-gradient(135deg, #1a5276, #2980b9);
     color: white;
-    padding: 30px;
+    padding: 40px 20px;
     text-align: center;
 }
 
+header h1 {
+    margin-bottom: 5px;
+    font-size: 36px;
+}
+
+/* Navigation */
 nav {
-    background-color: #34495e;
+    background-color: #154360;
 }
 
 nav ul {
     list-style: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
     text-align: center;
 }
 
@@ -28,43 +35,76 @@ nav ul li {
 }
 
 nav ul li a {
-    display: inline-block;
-    padding: 15px 20px;
     color: white;
+    padding: 15px 20px;
+    display: inline-block;
     text-decoration: none;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
-    background-color: #2c3e50;
+    background-color: #1a5276;
 }
 
-section {
-    padding: 40px;
+/* Sections */
+.section {
     max-width: 900px;
     margin: auto;
+    padding: 40px 25px;
+}
+
+.section.light {
+    background-color: #ffffff;
 }
 
 h2 {
-    color: #2c3e50;
+    color: #1a5276;
+    margin-bottom: 15px;
 }
 
+/* Cards */
 .card {
     background: white;
     padding: 20px;
     margin: 15px 0;
-    border-left: 5px solid #3498db;
+    border-left: 6px solid #3498db;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
+/* Lists */
+.list {
+    padding-left: 20px;
+}
+
+.list li {
+    margin-bottom: 10px;
+}
+
+/* Skills */
 .skills li {
     display: inline-block;
-    background: #e8f0fe;
+    background: #d6eaf8;
+    color: #154360;
+    padding: 8px 14px;
     margin: 5px;
-    padding: 8px 12px;
-    border-radius: 5px;
+    border-radius: 20px;
+    font-size: 14px;
 }
 
+/* Publications note */
+.note {
+    font-style: italic;
+    color: #555;
+}
+
+/* Contact */
+.contact {
+    background-color: #eaf2f8;
+}
+
+/* Footer */
 footer {
-    background-color: #2c3e50;
+    background-color: #154360;
     color: white;
     text-align: center;
     padding: 15px;
