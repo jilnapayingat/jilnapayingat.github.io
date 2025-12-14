@@ -1,9 +1,10 @@
-function showPage(pageId) {
-    const pages = document.querySelectorAll('.page');
-
-    pages.forEach(page => {
-        page.classList.remove('active');
+// Simple smooth scrolling for navigation
+document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        document.querySelector(targetId).scrollIntoView({
+            behavior: 'smooth'
+        });
     });
-
-    document.getElementById(pageId).classList.add('active');
-}
+});
