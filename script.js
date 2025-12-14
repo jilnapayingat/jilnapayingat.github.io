@@ -1,3 +1,9 @@
-function showMessage() {
-    alert("Hello! Thanks for visiting my website 😊");
+function showPage(pageId) {
+    const pages = document.querySelectorAll('.page');
+
+    pages.forEach(page => {
+        page.classList.remove('active');
+    });
+
+    document.getElementById(pageId).classList.add('active');
 }
