@@ -1,10 +1,10 @@
-// Simple smooth scrolling for navigation
-document.querySelectorAll('nav a').forEach(link => {
+// Smooth scrolling ONLY for same-page links (#)
+document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', function (e) {
         e.preventDefault();
-        const targetId = this.getAttribute('href');
-        document.querySelector(targetId).scrollIntoView({
-            behavior: 'smooth'
-        });
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+        }
     });
 });
