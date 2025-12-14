@@ -133,5 +133,19 @@ footer {
     color: #0b3c5d;
 }
 
+.note-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 14px;
+    background-color: #2980b9;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.note-link:hover {
+    background-color: #1a5276;
+}
 
 
